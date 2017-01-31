@@ -16,5 +16,8 @@
     "canvas"
   ],
   "author": "Casey McCaskill",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "^1.7.2"
+  }
 }
