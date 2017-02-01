@@ -1,0 +1,14 @@
+/* *{border:1px solid black;} */
+
+body{
+	background-color: #CCFFFF;
+}
+canvas{
+	background-color: #CCCCCC;
+}
+.header{
+	border: 1px solid #CCFFFF;
+	font-size: 42px;
+	color: #CCCCCC;
+	text-align: center;
+}

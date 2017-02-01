@@ -2,10 +2,51 @@
 <html>
 <head>
 	<title></title>
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
+
 </head>
 <body>
-	<script type="text/javascript"></script>
-		alert("test");
+
+<div class="container">
+	<div class="header col-sm-12">
+		Hangman
+	</div>
+
+	<div class="col-sm-6">
+		<canvas id="canvas" width="500px" height="500px"></canvas>
+	</div>	
+	<div class="tool-bar col-sm-6">
+		<input type="color" id="color-picker" />
+		<label>Choose your marker thickness</label>
+		<input type="number" id="thickness" placeholder="10" />
+	</div>
+
+	<div class="col-sm-6">
+		<form onsubmit="sendChatMessage()">
+			<input type="text" id="player-name" placeholder="Enter your Name" />
+			<input type="text" id="chat-message" placeholder="Enter your message" />
+			<input class="btn btn-primary" type="submit" value="send!" />
+		</form>
+	</div>
+
+	<div class="col-sm-6" id="user-names">
+		OUR USER NAMES WILL GO HERE AS THEY SHOW UP
+	</div>
+
+	<div class="col-sm-6" id="user-chats">
+		All CHATs GO HERE AS THEY SHOW UP
+	</div>
+
+
+
+
+
+</div>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.2/socket.io.js"></script>
+
+	<script type="text/javascript" src="scripts.js"></script>
 
 </body>
 </html>
